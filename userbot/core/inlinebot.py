@@ -31,7 +31,7 @@ LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 MEDIA_PATH_REGEX = re.compile(r"(:?\<\bmedia:(:?(?:.*?)+)\>)")
-CATLOGO = "https://telegra.ph/file/493268c1f5ebedc967eba.jpg"
+CATLOGO = "https://telegra.ph/file/bf6312b3a7b3ac2637466.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -54,7 +54,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
+    text = f"𝗗𝗔𝗥𝗞𝗦𝗛𝗔𝗗𝗢𝗪 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
         \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
     if Config.BADCAT:
         buttons = [
@@ -255,7 +255,7 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("Repo", "https://github.com/TgCatUB/catuserbot"),
+                    Button.url("Repo", "https://github.com/INDRA088/DARKSHADOWUSERBOT"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -605,10 +605,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/TgCatUB/catuserbot"),
+                Button.url("Source code", "https://github.com/INDRA088/DARKSHADOWUSERBOT"),
                 Button.url(
                     "Deploy",
-                    "https://github.com/TgCatUB/nekopack",
+                    "https://github.com/INDRA088/nekopack",
                 ),
             )
         ]
@@ -617,14 +617,14 @@ async def inline_handler(event):  # sourcery no-metrics
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁.", "md"
+            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗗𝗔𝗥𝗞𝗦𝗛𝗔𝗗𝗢𝗪 𝗨𝘀𝗲𝗿𝗯𝗼𝘁.", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝘾𝙖𝙩𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
+            title="𝘿𝘼𝙍𝙆𝙎𝙃𝘼𝘿𝙊𝙒 𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
             description="Deploy yourself",
-            url="https://github.com/TgCatUB/catuserbot",
+            url="https://github.com/INDRA088/DARKSHADOWUSERBOT",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
