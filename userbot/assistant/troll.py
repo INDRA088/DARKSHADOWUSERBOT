@@ -24,7 +24,7 @@ async def on_plug_in_callback_query_handler(event):
                 encrypted_tcxt = message["text"]
                 reply_pop_up_alert = encrypted_tcxt
         except KeyError:
-            reply_pop_up_alert = "This message no longer exists in catub server"
+            reply_pop_up_alert = "This message no longer exists in DARKSHADOW's server"
     else:
         reply_pop_up_alert = "This message no longer exists "
     await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
